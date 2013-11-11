@@ -1,0 +1,934 @@
+/* cSS File for Alexander Sample 1 Website */
+
+/*Define body background color & font */
+
+body
+{
+ font-family: arial,helvetica;
+ font-size: 10pt;
+ color: #666666;
+ background-color: white;
+}
+
+/*Create a class of link named 'normal' */
+a
+{
+ font-family: arial,helvetica;
+ text-decoration: underline;
+}
+a:link
+{
+ color: #666666;
+}
+a:visited
+{
+ color: #666666;
+}
+a:hover
+{
+ color: #CC3300;
+}
+a:active
+{
+ color: #CC3300;
+}
+
+
+/*Create a class of link named 'alt' */
+a.alt
+{
+ font-family: arial,helvetica;
+ font-size: 10pt;
+ text-decoration: underline;
+}
+a.alt:link
+{
+ color: #666600;
+}
+a.alt:visited
+{
+ color: #666600;
+}
+a.alt:hover
+{
+ color: #669999;
+}
+a.alt:active
+{
+ color: #669999;
+}
+
+
+
+
+/*Create a class of link named 'boldalt' */
+a.boldalt
+{
+ font-family: arial,helvetica;
+ font-size: 10pt;
+ font-weight: bold;
+ text-decoration: underline;
+}
+a.boldalt:link
+{
+ color: #666666;
+}
+a.boldalt:visited
+{
+ color: #666666;
+}
+a.boldalt:hover
+{
+ color: white;
+}
+a.boldalt:active
+{
+ color: white;
+}
+
+
+
+/* create a class of link named 'navbar' */
+a.navbar
+{
+ font-family: arial,helvetica;
+}
+
+a.navbar:link
+{
+ color: white;
+ text-decoration: none;
+ font-size: 10pt; 
+ font-weight: bold;
+ 
+}
+
+a.navbar:visited
+{
+ color: white;
+ text-decoration: none;
+ font-size: 10pt; 
+ font-weight: bold;
+}
+
+a.navbar:hover
+{
+color: #FFCC99;
+text-decoration: none;
+font-size: 10pt; 
+font-weight: bold;
+}
+
+a.navbar:active
+{
+color: #FFCC99;
+text-decoration: none;
+font-size: 10pt; 
+font-weight: bold;
+}
+
+
+
+/* create a class of link named 'big' */
+a.navbarbig
+{
+ font-family: arial,helvetica;
+}
+
+a.big:link
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 12pt; 
+ font-weight: bold;
+ 
+}
+
+a.big:visited
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 12pt; 
+ font-weight: bold;
+}
+
+a.big:hover
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 12pt; 
+font-weight: bold;
+}
+
+a.big:active
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 12pt; 
+font-weight: bold;
+}
+
+
+
+
+
+/* create a class of link named 'bold' */
+a.bold
+{
+ font-family: arial,helvetica;
+}
+
+a.bold:link
+{
+ color: #666666;
+ text-decoration: underline;
+ font-size: 10pt; 
+ font-weight: bold;
+ 
+}
+
+a.bold:visited
+{
+ color: #666666;
+ text-decoration: underline;
+ font-size: 10pt; 
+ font-weight: bold;
+}
+
+a.bold:hover
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 10pt; 
+font-weight: bold;
+}
+
+a.bold:active
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 10pt; 
+font-weight: bold;
+}
+
+
+/* create a class of link named 'boldsmall' */
+a.boldsmall
+{
+ font-family: arial,helvetica;
+}
+
+a.boldsmall:link
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 9pt; 
+ font-weight: bold;
+ 
+}
+
+a.boldsmall:visited
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 9pt; 
+ font-weight: bold;
+}
+
+a.boldsmall:hover
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 9pt; 
+font-weight: bold;
+}
+
+a.boldsmall:active
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 9pt; 
+font-weight: bold;
+}
+
+
+/* create a class of link named 'small' */
+a.small
+{
+ font-family: arial,helvetica;
+}
+
+a.small:link
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 9pt; 
+ font-weight: normal;
+ 
+}
+
+a.small:visited
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 9pt; 
+ font-weight: normal;
+}
+
+a.small:hover
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 9pt; 
+font-weight: normal;
+}
+
+a.small:active
+{
+color: #99CC99;
+text-decoration: none;
+font-size: 9pt; 
+font-weight: normal;
+}
+
+
+
+
+
+
+
+/* create a class of link named 'contact' */
+a.contact
+{
+ font-family: arial,helvetica;
+}
+
+a.contact:link
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 10pt; 
+}
+
+a.contact:visited
+{
+ color: #666666;
+ text-decoration: none;
+ font-size: 10pt; 
+}
+
+a.contact:hover
+{
+color: #CC3300;
+text-decoration: none;
+font-size: 10pt; 
+}
+
+a.contact:active
+{
+color: #CC3300;
+text-decoration: none;
+font-size: 10pt; 
+}
+
+
+
+/*create link box */
+
+a.box
+{
+float: right;
+width: 170px;
+padding: 10px;
+border-right: none;
+border-left: none;
+border-top: none;
+border-bottom: 1px solid #666666;
+font-family: arial,helvetica;
+font-size: 12pt;
+font-weight: bold;
+text-decoration: none;
+text-align: right;
+}
+
+a.box:link
+{
+color: #CC9900;
+background-color: white;
+}
+
+a.box:visited
+{
+color: #CC9900;
+background-color: white;
+}
+
+a.box:hover
+{
+color: #CC3300;
+background-color: white;
+}
+
+a.box:active
+{
+color: #CC3300;
+background-color: white;
+}
+
+
+
+
+/*create link box */
+
+a.altbox
+{
+float: right;
+width: 170px;
+padding: 10px;
+border-right: none;
+border-left: none;
+border-top: none;
+border-bottom: 1px solid #666666;
+font-family: arial,helvetica;
+font-size: 12pt;
+font-weight: bold;
+text-decoration: none;
+text-align: right;
+}
+
+a.altbox:link
+{
+color: #CC3300;
+background-color: white;
+}
+
+a.altbox:visited
+{
+color: #CC3300;
+background-color: white;
+}
+
+a.altbox:hover
+{
+color: #CC3300;
+background-color: white;
+}
+
+a.altbox:active
+{
+color: #CC3300;
+background-color: white;
+}
+
+
+
+
+
+
+/* create paragraph style */
+
+p
+{
+font-size: 10pt;
+font-family: arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+}
+
+
+/* create paragraph style */
+
+p.center
+{
+font-size: 10pt;
+font-family: arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: center;
+}
+
+
+
+
+
+/* create paragraph style */
+
+p.small
+{
+font-size: 8pt;
+font-family: arial,helvetica;
+color: #666666;
+font-weight: normal;
+}
+
+
+
+
+/* create blockquote style */
+
+blockquote
+{
+font-size: 10pt;
+font-family: arial,helvetica;
+color: #666666;
+text-align: left;
+}
+
+/* create centred blockquote style */
+
+blockquote.center
+{
+font-size: 10pt;
+font-family: arial,helvetica;
+color: #666666;
+text-align: center;
+}
+
+p.title
+{
+font-size: 15pt;
+font-family: arial,helvetica;
+color: #666666;
+text-align: left;
+font-weight: normal;
+}
+
+h3
+{
+font-size: 14pt;
+font-family: arial,helvetica;
+color: #666666;
+text-align: left;
+font-weight: normal;
+}
+
+h2
+{
+font-size: 14pt;
+font-family: arial,helvetica;
+color: #666666;
+text-align: center;
+font-weight: normal;
+}
+
+p.box
+{
+float: right;
+border-right: none;
+border-left: 10px solid white;
+border-top: none;
+border-bottom: none;
+width: 150px;
+background-color: white;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 8pt;
+text-align: right;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+p.boxbig
+{
+float: left;
+border-right: none;
+border-left: none;
+border-top: 2px solid #666666;
+border-bottom: 2px solid #666666;
+width: 780px;
+background-color: white;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+p.box1
+{
+float: left;
+border-right: 10px solid white;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 230px;
+background-color: white;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+p.box2
+{
+float: left;
+border-right: none;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 230px;
+background-color: white;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+
+
+p.boxsmall
+{
+float: left;
+border-right: 1px solid #666666;
+border-left: 1px solid #666666;
+border-top: 1px solid #666666;
+border-bottom: 1px solid #666666;
+width: 80px;
+background-color: #99CC99;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: center;
+font-weight: bold;
+font-style: normal;
+color: #666666;
+}
+
+p.boxcolor
+{
+float: left;
+border-right: none;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 250px;
+background-color: #CCCCCC;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+p.boxcolor2
+{
+float: right;
+border-right: 2px solid #666666;
+border-left: 2px solid #666666;
+border-top: 2px solid #666666;
+border-bottom: 2px solid #666666;
+width: 250px;
+background-color: #99CC99;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 11pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+p.boxnavbar
+{
+float: left;
+border-right: 2px solid #99CC99;
+border-left: 2px solid #99CC99;
+border-top: 2px solid #99CC99;
+border-bottom: 2px solid #99CC99;
+width: 177px;
+background-color: white;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+p.boxcolornav
+{
+float: right;
+border-right: 2px solid #666666;
+border-left: 2px solid #666666;
+border-top: 2px solid #666666;
+border-bottom: 2px solid #666666;
+width: 177px;
+background-color: #99CC99;
+padding: 10px;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+p.photo
+{
+float: left;
+border-right: 20px solid white;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 270px;
+background-color: white;
+padding: 1;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+
+p.photowide
+{
+float: left;
+border-right: 30px solid white;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 400px;
+background-color: white;
+padding: 1;
+font-family: arial,helvetica;
+font-size: 5pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+
+p.blank
+{
+float: left;
+border-right: 10px solid white;
+border-left: none;
+border-top: none;
+border-bottom: none;
+width: 20px;
+background-color: white;
+padding: 1;
+font-family: arial,helvetica;
+font-size: 5pt;
+text-align: center;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+
+ul
+{
+font-size: 10pt;
+font-family: arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+}
+
+
+ul.photo
+{
+float: left;
+border-right: none;
+border-left: 5px solid white;
+border-top: none;
+border-bottom: none;
+width: 230px;
+background-color: white;
+padding: none;
+font-family: arial,helvetica;
+font-size: 10pt;
+text-align: left;
+font-weight: normal;
+font-style: normal;
+color: #666666;
+}
+
+
+
+font.title
+{
+font-size: 25pt;
+font-family:arial,helvetica;
+color: #666666;
+text-align: left;
+font-style: normal;
+}
+
+
+font.sub
+{
+font-size: 11pt;
+font-family:arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+
+font.subtitle
+{
+font-size: 15pt;
+font-family:arial,helvetica;
+color: #666666;
+text-align: left;
+font-style: normal;
+}
+
+
+
+font.main
+{
+font-size: 10pt;
+font-family:arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+font.white
+{
+font-size: 10pt;
+font-family:arial,helvetica;
+color: white;
+font-weight: bold;
+text-align: left;
+font-style: normal;
+}
+
+
+font.small
+{
+font-size: 9pt;
+font-family:arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+font.other
+{
+font-size: 14pt;
+font-family:arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+font.alt
+{
+font-size: 10pt;
+font-family:arial,helvetica;
+color: #666666;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+
+font.tiny
+{
+font-size: 5pt;
+font-family:arial,helvetica;
+color: #99CC99;
+font-weight: normal;
+text-align: left;
+font-style: normal;
+}
+
+
+
+td
+{
+background-color: white;
+text-align: left;
+font-family: arial,helvetica;
+font-size: 10pt;
+font-style: normal;
+font-weight: normal;
+}
+
+td.center
+{
+background-color: white;
+text-align: center;
+font-family: arial,helvetica;
+font-size: 10pt;
+font-style: normal;
+font-weight: normal;
+}
+
+
+td.color
+{
+background-color: #666600;
+text-align: center;
+font-family: arial, helvetica;
+font-size: 10pt;
+font-style: normal;
+font-weight: normal;
+}
+
+
+
+td.alt
+{
+background-color: white;
+text-align: center;
+font-family: arial, helvetica;
+font-size: 10pt;
+font-style: normal;
+font-weight: normal;
+}
+
+
+
+td.colortitle
+{
+background-color: #99CC99;
+text-align: left;
+font-family: arial, helvetica;
+font-size: 10pt;
+font-style: normal;
+font-weight: normal;
+}

@@ -1,0 +1,10 @@
+M-A-T Farben
+
+Web-Grün:
+R5 G239 B5
+#05ef05
+
+Druck-Grün:
+C66 M0 Y100 K0
+R95 G187 B70
+#5fbb46

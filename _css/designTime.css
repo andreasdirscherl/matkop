@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+	overflow: visible !important;
+	width: 870px !important;
+	margin: 30px auto !important;
+}
+#Inhalt {
+		background-color:#777;
+		padding-left:40px;
+		padding-right:50px;
+	}
+
+#sprytooltip1 {
+	/* [disabled]display: none; */
+}
+#sprytooltip2 {
+	display: none;
+}
+#sprytooltip3 {
+	display: none;
+}
+#sprytooltip4 {
+	display: none;
+}
+#sprytooltip5 {
+	display: none;
+}
+#sprytooltip6 {
+	display: none;
+}
+#Header, #Logo, #NavWrapper, #footer  {
+	display:block !important;
+}

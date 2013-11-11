@@ -1,0 +1,57 @@
+#overlay {
+	/* must be initially hidden */
+	display:none;
+	position: fixed !important;
+	left: auto;
+	top: 30px !important;
+	/* [disabled]height:550px; */
+	width:710px;
+	/* [disabled]padding: 30px 60px; */
+	/* place overlay on top of other elements */
+	z-index:1000;
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;
+	box-shadow: 0 0 90px 5px #000;
+	border: 1px solid white;
+	background-color:#555 !important;
+	clear:left;
+}
+	
+/* container for external content. uses vertical scrollbar, if needed */
+	div.contentWrap {
+	/* [disabled]height:550px; */
+	overflow:auto;
+	width:710px !important;
+	background: #555;
+	}
+/* close button positioned on upper right corner */
+#overlay .close {
+    width: 30px;
+	height: 30px;
+	background: url(../prettyPhoto/images/prettyPhoto/default/sprite.png) 2px 1px no-repeat !important;
+	cursor: pointer;
+	position:absolute;
+	z-index:10000;
+    right: -20px;
+    top: -30px;
+	border:none !important;
+	padding-left:0 !important;
+}
+
+
+/* IE6 Hack */
+[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+	<![endif]

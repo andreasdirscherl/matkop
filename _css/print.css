@@ -1,0 +1,42 @@
+/* Header druckfreundlich */
+#Header {
+	height:80px !important;
+	border-bottom: 1px solid #888;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+/* Schriftgröpße im header verkleinern */
+#Header h1, #Header h2 {
+	font-size:80% !important;
+	font-weight:normal !important;
+}
+/* Slogan durch Text ersetzen */
+#slogan { 
+	height:25px !important;
+	font-size: 70%;
+}
+#slogan img { 
+	display:none !important
+}
+#slogan:after { 
+	content:"Konkret - Wirksam - Vielseitig" 
+}
+
+/* Verstecke Logo, Navigation und Footer */
+#Logo, #NavWrapper, #footer {
+	display:none !important;
+}
+
+/* Links als Normaltext zeigen  */
+a {
+	border:none !important;
+	background: none !important;
+}
+
+/* Keine Seitenumbrüche in einer Tabellenzeile, funktioniert aber in den meisten Browsern nicht */
+tr, td {
+	page-break-inside:avoid !important;
+}
+.noPrint {
+	display:none !important;
+}

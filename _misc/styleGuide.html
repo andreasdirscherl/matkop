@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<meta name="copyright" content="Copyright &copy; Andreas Dirscherl" />
+<meta name="author" content="Andreas Dirscherl" />
+<meta name="expires" content="0" />
+<meta name="language" content="de" />
+<meta name="robots" content="index, follow" />
+<meta name="DC.rights" scheme="DCTERMS.URI" content="http://alexandertechnik.andreasdirscherl.de/kontakt.html" />
+<meta name="date" content="" />
+<link href="../favicon.ico" rel="shortcut icon" />
+<!-- Conditional Styleheet for IE Hacks preventing several IE Bugs  -->
+<!--[if lt IE 8]>
+	<link href="_css/ie7-hacks.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+<link href="../_css/style.css" type="text/css" rel="stylesheet" />
+<meta name="description" content="Andreas Dirscherl, Coach der F.M. Alexander-Technik: Wie ich zur Alexander-Technik kam, was mich daran bis heute fasziniert und wie ich die Technik im Alltag f&uuml;r mich nutze" />
+<meta name="keywords" content="F.M. Alexander-Technik, Alexander-Technik, Alexander-Technik M&uuml;nchen, Alexander-Technik Deutschland, Alexander-Technik Unterricht, Alexander-Technik Lektionen, Alexander-Technik Coaching, Alexander-Technik Lehrer, Alexander-Technik Coach" />
+<script  src="../_javascript/jquery-1.4.3.min.js" type="text/javascript" ></script>
+<title>Style Guide - M&uuml;nchner Alexander-Technik Kooperation</title>
+<style type="text/css">
+	#NavWrapper {
+		color:#555;
+	}
+	pre {
+	text-align:left;
+	font-size:80%;
+	font-weight: normal;
+	margin: 1em 0;
+	}
+</style>
+</head>
+
+<body onload="animateSlogan()">
+<div id="wrapper">
+  <div style="float:right; width:180px; margin:0; padding:0">
+    <h2>&lt;#wrapper<br />
+      #Logo&gt;</h2>
+    <pre>
+float:       right
+Breite:      180px
+H&ouml;he:        180px
+    </pre>
+  </div>
+
+<div style="border:2px solid #DDD; padding: 10px; background-color:#555; height: 150px">
+  <h2>&lt;#wrapper&gt;</h2>
+<pre>
+Font:   Arial
+Breite: 870px
+margin: 30px auto
+Hintergrund: #555
+</pre>
+</div>
+
+<!-- START Logo -->
+  <div id="Logo" style="clear:both"> <a href="../index.html"><img src="../_images/m-a-t-Logo.png" width="180" height="180" alt="Logo M&uuml;nchen-Alexander-Technik" title="Logo M&uuml;nchen-Alexander-Technik" /></a>
+  </div>
+  <!-- ENDE Logo -->
+
+  <!-- START Titel/Header -->
+  
+  <div id="Header">
+    <h1>#Header</h1>
+<pre>
+        Breite:      610px (padding links 60px)
+        Höhe:        180px (padding oben 20px)
+        
+        Hintergrund: #f4f4f4
+        Textfarbe:   #555</pre>
+  </div>
+  <!-- ENDE Titel/Header -->
+  
+  <!-- START Navigationsleiste -->
+  <div id="NavWrapper">
+      <p>Navigation / Rahmen &lt;#Navigation&gt;<br />
+<br />
+</p>
+
+<ul id="Navigation">
+	<li><a href="#">Link</a></li>
+	<li><a href="#">Link</a></li>
+    </ul>
+      
+<pre>
+ Breite:      180px
+ 
+ Hintergrund: #f4f4f4
+ Textfarbe:   #555
+ 
+ Hyperlink   
+   Text:      #555
+   Hintergr: #f4f4f4
+   Rahmen unt:2px #DDD
+ Hover       
+   Text:      #333
+   Hintergr:  #05ef05
+</pre>
+  </div>
+  <!-- ENDE Navigationsleiste -->
+  
+  <!-- START SeitenInhalt -->
+  <div id="Inhalt">
+    <div id="ContentContainer">
+      <div id="mainContent">
+        <h1>Normaler Text  &lt;#Inhalt&gt;</h1>
+  <p> <a href="#">Link</a></p>
+  <p> <a href="#">Link</a></p>
+  <pre>
+  Breite:          690px (padding links 40px, rechts 50px)
+  Hintergrund:     #999
+  Text:            #f5f5f5
+
+  Hyperlink     
+    Text:          #f5f5f5
+    Rahmen unten:  1px dotted #555;
+  Hover
+   Text:           #555
+   Hintergr:       #05ef05
+  </pre>
+</div>
+
+</div>
+  </div>
+  <!-- ENDE SeitenInhalt -->
+  
+</div>
+<!-- ENDE wrapper -->
+
+<script type="text/javascript">
+
+function animateSlogan() {
+   $(document).ready(function() {
+	animateImages('#sloganKonkret');
+	window.setTimeout("animateImages('#sloganWirksam')", 6000);
+	window.setTimeout("animateImages('#sloganVielseitig')", 12000);					    window.setTimeout("animateSlogan()", 19000);
+})
+}
+
+function animateImages(id) {
+	 $(id).animate({
+		// Grow.
+		opacity: 1,
+		height: "30px",
+		width: "120px"
+	  }, 4000, function() {
+		// Shrink 
+	 $(id).animate({
+		opacity: .3,
+		height: "23px",
+		width: "90px"
+	  }, 6000, function() {
+	  });
+	  });
+}
+</script>
+</body>
+</html>
