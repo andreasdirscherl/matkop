@@ -65,17 +65,17 @@
 .AccordionPanelTab p
 {
 	text-decoration: none;
-	font-weight:bold !important;
-	color:#EEE;
-	padding:10px 0px 10px 20px;
-	background:url(../_images/m-a-t-Punkt.png) no-repeat 3px center;
+	font-weight: bold !important;
+	color: #EEE;
+	padding: 10px 0px 10px 20px;
+	background: url(../_images/m-a-t-Punkt.png) no-repeat 3px center;
 	/* [disabled]border-bottom:1px dotted #555; */
 	/* [disabled]width:200px !important; */
-	font-size:90% !important;
+	font-size: 90% !important;
 	/* [disabled]margin-top: 4px !important; */
 	/* [disabled]margin-bottom: 4px !important; */
 	margin: 0px !important;
-	vertical-align:middle;
+	vertical-align: middle;
 }
 .AccordionPanelTab .autor { /* Diese Regel ist für den Namen und Foto in den Beispielüberschriften */
 	float: right;
