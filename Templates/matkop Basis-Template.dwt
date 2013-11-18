@@ -97,13 +97,13 @@
     <ul id="Navigation">
       <li><a class="@@(_document['classMenuStartseite'])@@" href="../index.html">Startseite</a></li>
 	  <li><a class="@@(_document['classMenuTeam'])@@" href="../team.html">Das Team</a></li>
+       <li><a class="@@(_document['classMenuProfile'])@@" href="../profile.html">Unsere Profile</a></li>
 	  <li><a class="@@(_document['classReferenzen'])@@" href="../referenzen.html">Referenzen</a></li>
 	  <li><a class="@@(_document['classMenuProjekte'])@@" href="../projekte.html">Projekte / Termine</a></li>
-      <li><a class="@@(_document['classRuecken'])@@" href="../schmerzenVerlernen/index.html">Schmerzen verlernen</a></li>
-      <li><a class="@@(_document['classBeispiele'])@@" href="../beispiele.html">Anwendungsbeispiele</a></li>
       <li><a class="@@(_document['classMenuFormate'])@@" href="../formate.html">Arbeitsformate</a></li>
+      <li><a class="@@(_document['classBeispiele'])@@" href="../beispiele.html">Anwendungsbeispiele</a></li>
+      <li><a class="@@(_document['classRuecken'])@@" href="../schmerzenVerlernen/index.html">Schmerzen verlernen</a></li>
       <li><a class="@@(_document['classMenuWasBegeistert'])@@" href="../wasBegeistert.html">Was  uns begeistert</a></li>
-       <li><a class="@@(_document['classMenuProfile'])@@" href="../profile.html">Unsere Profile</a></li>
       <li><a class="@@(_document['classMenuKarte'])@@" href="../karte.html">Regionalkarte</a></li>
       <li><a class="@@(_document['classMenuKontakt'])@@" href="../kontakt.php">Kontakt</a></li>
     </ul>

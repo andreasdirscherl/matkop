@@ -8,8 +8,8 @@
 }
 #Inhalt {
 		background-color:#777;
-		padding-left:40px;
-		padding-right:50px;
+		padding-left:40px !important;
+		padding-right:50px !important;
 	}
 
 #sprytooltip1 {
