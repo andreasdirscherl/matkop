@@ -1,3 +1,6 @@
-# gitignore File für die matkop-Seite muenchen-alexander-technik.de
+﻿# gitignore File für die matkop-Seite muenchen-alexander-technik.de
 Thumbs.db
 dwsync.xml
+_notes/
+_versionen/
+_piaBeispiel/

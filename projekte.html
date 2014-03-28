@@ -44,7 +44,7 @@ function togglePanel(panelName) { // Open and close Panels
 <!-- InstanceParam name="classMenuKarte" type="text" value="default" -->
 <!-- InstanceParam name="classMenuImpressum" type="text" value="default" -->
 <!-- InstanceParam name="classBeispiele" type="text" value="default" -->
-<!-- InstanceParam name="classMenuWasBegeistert" type="text" value="default" -->
+<!-- InstanceParam name="classMenuWasUnsAusmacht" type="text" value="default" -->
 <!-- InstanceParam name="class" type="text" value="default" -->
 <!-- InstanceParam name="classRuecken" type="text" value="default" -->
 <!-- InstanceParam name="metaDescription" type="text" value="Münchner Alexander-Technik Kooperation - Ihre Anlaufstelle für Alexander-Technik in Südbayern." -->
@@ -79,6 +79,7 @@ function togglePanel(panelName) { // Open and close Panels
 	}
 </style>
 <!-- InstanceParam name="classReferenzen" type="text" value="default" -->
+<!-- InstanceParam name="classAlexanderTechnik" type="text" value="default" -->
 </head>
 
 <body onload="animateSlogan()">
@@ -106,14 +107,13 @@ function togglePanel(panelName) { // Open and close Panels
     <ul id="Navigation">
       <li><a class="default" href="index.html">Startseite</a></li>
 	  <li><a class="default" href="team.html">Das Team</a></li>
-       <li><a class="default" href="profile.html">Unsere Profile</a></li>
-	  <li><a class="default" href="referenzen.html">Referenzen</a></li>
+      <li><a class="default" href="wasUnsAusmacht.html">Was uns ausmacht</a></li>
+      <li><a class="default" href="formate.html">Unsere Angebote</a></li>
 	  <li><a class="current" href="projekte.html">Projekte / Termine</a></li>
-      <li><a class="default" href="formate.html">Arbeitsformate</a></li>
-      <li><a class="default" href="beispiele.html">Anwendungsbeispiele</a></li>
-      <li><a class="default" href="schmerzenVerlernen/index.html">Schmerzen verlernen</a></li>
-      <li><a class="default" href="wasBegeistert.html">Was  uns begeistert</a></li>
-      <li><a class="default" href="karte.html">Regionalkarte</a></li>
+	  <li><a class="default" href="referenzen.html">Referenzen</a></li>
+	  <li><a class="default" href="alexandertechnik.html">Alexander-Technik</a></li>
+	  <li><a class="default" href="schmerzenVerlernen/index.html">Schmerzen verlernen</a></li>
+	  <li><a class="default" href="karte.html">Wo wir sind / Karte</a></li>
       <li><a class="default" href="kontakt.php">Kontakt</a></li>
     </ul>
   </div>
@@ -128,8 +128,30 @@ function togglePanel(panelName) { // Open and close Panels
 
 <!-- ############ AKTUELL START ############## -->
     <h1 id="aktuell">Aktuell</h1>
-    <p><em>Wir bereiten derzeit neue interessante Angebote für Sie vor. Wir veröffentlichen diese hier, sobald die Details feststehen. 
-      Schauen Sie bitte wieder vorbei!</em></p>
+    <div id="schnuppernachmittag04_14" class="CollapsiblePanel">
+      <div class="CollapsiblePanelTab">
+            <p class="eventKategorie">Öffentliche Veranstaltung</p>
+            <h1><a class="noBackground" href="#here" onclick="togglePanel(schnuppernachmittag04_14);"><img class="imgFloaterR" src="_images/aktionen/schnuppernachmittag.gif" width="280" height="144" alt="Schnuppernachmittag" title="Schnuppernachmittag 11.10.2013" /></a>Alexander-Technik Schnuppernachmittag</h1>
+            <h2>Schnuppern, Kennenlernen, Nachfragen. 
+              Unverbindlich und kostenlos. 
+              Ohne Anmeldung.<br />
+          </h2>
+            <p>Freitag, 4 April 2014, 15:00 - 19:30 Uhr<br />
+              <span class="small">M&uuml;nchner Ausbildung f&uuml;r F. M. Alexander-Technik,<br />
+                Ebenauerstr. 10, 80637 M&uuml;nchen </span></p>
+            <p><a href="#here" class="more" onclick="schnuppernachmittag04_14.open();">Mehr Informationen...</a><a href="#here" class="less" onclick="schnuppernachmittag04_14.close();">Detailinformationen wieder einklappen...</a></p>
+        </div>
+          <div class="CollapsiblePanelContent">
+            <h3>Alexander-Technik erleben und ausprobieren 
+              — mit Lehrern der Münchner Ausbildung für F.M. Alexander-Technik (M.A.A.T.)</h3>
+            <p>Die Münchner Ausbildung für F. M. Alexander-Technik öffnet 4 ½ Stunden lang ihre Türen für Sie. Kommen Sie im genannten Zeitraum wann Sie wollen und nutzen Sie die Gelegenheit, zu beobachten, zuzuhören, Fragen zu stellen und v.a. unverbindlich selbst zu experimentieren! </p>
+            <p><strong>Freitag, 4. April 2014, 15:00 - 19:30 Uhr<br />
+              M&uuml;nchner Ausbildung f&uuml;r F. M. Alexander-Technik</strong>,<br />
+              Ebenauerstr. 10, 80637 M&uuml;nchen &nbsp;&nbsp;<a href="http://www.fmat.de/anfahrt.htm" target="_blank">&nbsp;Anfahrt</a><br />
+            </p>
+      </div>
+    </div>
+    <p><a class="small" href="#wrapper">Nach oben zum Seitenanfang</a></p>
 <!-- ########### ENDE Aktuell ############# -->
       
 <!-- ############ RÜCKSCHAU START ############## -->
@@ -152,7 +174,6 @@ function togglePanel(panelName) { // Open and close Panels
     <p><a href="#here" class="more" onclick="gutReiten.open();">Mehr Informationen...</a><a href="#here" class="less" onclick="gutReiten.close();">Detailinformationen wieder einklappen...</a></p>
   </div>
   <div class="CollapsiblePanelContent">
-    <h2><strong>
     <p><br />
       Wenn dies Sie davon abhält, Freude beim Reiten zu haben, dann ist die Alexander-Technik das Richtige für Sie. Und falls es den einen Tag wie im Traum läuft und am nächsten genug Stoff für Alpträume liefert, dann liefert Ihnen die Alexander-Technik die Antwort auf die Frage nach dem "Warum?"      </p>
     <p>Mit einfachen Prinzipien lernen Sie, wie Sie sich das Reiten und Sitzen leichter machen können.<br />
@@ -180,7 +201,7 @@ Aber sehen Sie selbst in <a href="http://www.youtube.com/watch?v=x2RA5mQXvow" ta
         <p><strong>Ort:</strong> Mutabor, Jägerwirtstr. 6, <br />
           81373 München, Rückgebäude Stemmerhof <a href="http://www.stemmerhof.de/anfahrt-muenchen.html" target="_blank">Anfahrt </a></p>
         <p><strong>          Kosten</strong>: 120€</p>
-        <p>&quot;<em><span new="">Sie bekommen alltagstaugliche Methoden an die Hand, um mit sich selbst besser umzugehen – gerade in stressigen Situationen</span></em><span new="">&quot;. </span>        </p>
+        <p>&quot;<em>Sie bekommen alltagstaugliche Methoden an die Hand, um mit sich selbst besser umzugehen – gerade in stressigen Situationen</em>&quot;.         </p>
         <p><a href="#here" class="more" onclick="ergonomieInBewegung.open();">Mehr Informationen...</a><a href="#here" class="less" onclick="ergonomieInBewegung.close();">Detailinformationen wieder einklappen...</a></p>
       </div>
       <div class="CollapsiblePanelContent">
@@ -234,14 +255,12 @@ Aber sehen Sie selbst in <a href="http://www.youtube.com/watch?v=x2RA5mQXvow" ta
 <div id="maatJubilee" class="CollapsiblePanel">
   <div class="CollapsiblePanelTab">
     <p class="eventKategorie">Zahlreiche Workshops</p>
-    <h1><a class="noBackground" href="http://fmat.de/jubilee.htm" target="_blank"><img class="imgFloaterR" src="_images/aktionen/maatJubileeKerzen.jpg" width="250" height="152" alt="Schnuppernachmittag 13.07.2012" title="Schnuppernachmittag 13.07.2012" /></a>10 Jahre Münchner Ausbildung für F. M. Alexander-Technik (M.A.A.T.)</h1>
+    <h1><img class="imgFloaterR" src="_images/aktionen/maatJubileeKerzen.jpg" width="250" height="152" alt="Schnuppernachmittag 13.07.2012" title="Schnuppernachmittag 13.07.2012" />10 Jahre Münchner Ausbildung für F. M. Alexander-Technik (M.A.A.T.)</h1>
     <p><span class="title" style="margin-top: 20px; margin-bottom: 10px;">Anl&auml;sslich dieses Geburtstags pr&auml;sentieren Lehrerinnen und -Lehrer der Münchner Alexander-Technik Kooperation im Herbst <br />
       <a href="http://fmat.de/jubilee.htm" target="_blank">ein breites Spektrum von Workshops!</a></span></p>
     <p>Wir freuen uns auf Sie!</p>
     <h1>Jubiläums-Workshops<br />
-      September &#8212; November 2012</h1>
-    <p>Ausführliche Infomationen zum Programm im Einzelnen auf der <br />
-      <a href="http://fmat.de/jubilee.htm" target="_blank">Jubiläums-Seite der M.A.A.T.</a></p>
+      September &#8212; November 2012  </h1>
   </div>
 </div>
 <p><a class="small" href="#wrapper">Nach oben zum Seitenanfang</a></p>
@@ -274,7 +293,7 @@ Aber sehen Sie selbst in <a href="http://www.youtube.com/watch?v=x2RA5mQXvow" ta
       <div class="CollapsiblePanelTab">
         <p class="eventKategorie">Vorträge<br />
           </p>
-        <h2 class="noMarginBottom"><a href="http://www.heilpraktikerkongressdessuedens.de/157.html#c1825" class="noBackground"><img src="_images/aktionen/heilpraktikerLogo.gif" alt="Logo Bund Heilpraktiker" title="Logo Bund Heilpraktiker" width="135" height="133" class="imgFloaterR" /></a>Erlebnis-Vorträge mit
+        <h2 class="noMarginBottom"><a href="http://www.heilpraktikerkongressdessuedens.de/157.html#c1825" target="_blank" class="noBackground"><img src="_images/aktionen/heilpraktikerLogo.gif" alt="Logo Bund Heilpraktiker" title="Logo Bund Heilpraktiker" width="135" height="133" class="imgFloaterR" /></a>Erlebnis-Vorträge mit
           der M&uuml;nchner Alexander-Technik Kooperation</h2>
         <h1 class="noMarginBottom">Heilpraktiker-Kongress des Südens</h1>
         <h2 class="noMarginBottom"> F. M. Alexander-Technik: gesundes Selbstmanagement für Heilpraktiker </h2>
@@ -437,7 +456,7 @@ Aber sehen Sie selbst in <a href="http://www.youtube.com/watch?v=x2RA5mQXvow" ta
     <p><a class="small" href="#wrapper">Nach oben zum Seitenanfang</a></p>
 <p>&nbsp;</p>
     <div id="erlebnisVortrag2012_03" class="CollapsiblePanel">
-      <div class="CollapsiblePanelTab" tabindex="0">
+      <div class="CollapsiblePanelTab">
         <p class="eventKategorie">Erlebnisvortrag<br />
           &#8211; &Ouml;ffentliche Veranstaltung</p>
         <h2>Kommen Sie zum Erlebnis-Vortrag<br />
@@ -621,7 +640,6 @@ Andernfalls ist keine R&uuml;ckerstattung mehr m&ouml;glich.</p>
           <h2>&bdquo;Zuerst ich?&ldquo; &#8211; &bdquo;Ja, und umso besser f&uuml;r die anderen!&ldquo;</h2>
           <h3>Schnuppernachmittag im Rahmen der 3. M&uuml;nchner Woche f&uuml;r Seelische
             Gesundheit</h3>
-        </h2>
         <p>Samstag, 8.10.2011, 14:00-16:30 Uhr <br />
           In den R&auml;umen der ESG, Friedrichstra&szlig;e 25, 80801 M&uuml;nchen // <a href="http://maps.google.de/maps/ms?hl=de&amp;ie=UTF8&amp;msa=0&amp;msid=103793367628497562895.0004813d6640b5b8aac86&amp;ll=48.161348,11.579654&amp;spn=0.011479,0.029075&amp;z=16&amp;iwloc=0004813d71606169e5627" target="_blank">Karte</a><br />
           nicht barrierefrei </p>
@@ -786,6 +804,7 @@ var schnuppernachmittag12_ = new Spry.Widget.CollapsiblePanel("maatJubilee", {co
 var ergonomieInBewegung = new Spry.Widget.CollapsiblePanel("ergonomieInBewegung", {contentIsOpen:false, duration: 150});
 var gutReiten = new Spry.Widget.CollapsiblePanel("gutReiten", {contentIsOpen:false, duration: 150});
 var schnuppernachmittag13_10 = new Spry.Widget.CollapsiblePanel("schnuppernachmittag13_10", {contentIsOpen:false, duration: 150});
+var schnuppernachmittag04_14 = new Spry.Widget.CollapsiblePanel("schnuppernachmittag04_14", {contentIsOpen:false, duration: 150});
 </script>
   <!-- InstanceEndEditable -->
     </div>
@@ -795,7 +814,7 @@ var schnuppernachmittag13_10 = new Spry.Widget.CollapsiblePanel("schnuppernachmi
   <div id="footer">
     <ul>
       <li><a href="team.html">Die M&uuml;nchner Alexander-Technik Kooperation</a></li>
-      <li><a href="newsletter/index.php">Unsere Newsletter</a></li>
+      <li class="hidden"><a href="newsletter/index.php">Unsere Newsletter</a></li>
       <li><a href="kontakt.php">Kontakt</a></li>
       <li><a href="impressum.html">Impressum</a></li>
     </ul>

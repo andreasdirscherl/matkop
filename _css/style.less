@@ -1,0 +1,842 @@
+@hauptschrift-farbe: #f5f5f5;
+@hintergrund: #555;
+@hintergrund1: lighten(@hintergrund, 20%);
+@hintergrund2: lighten(@hintergrund1, 5%);
+@table-border: 1px solid white;
+@stdRandLinks: 17px;
+
+* {	margin:0; padding:0; } /* Wichtig: Reset alle Margins und Paddings für alle Elemente !! */
+
+body
+{
+	background-color:@hintergrund;
+	color:@hauptschrift-farbe;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	/* [disabled]background: url(file:///C|/UniServer/www/_images/background_full.jpg) no-repeat; */
+	/* [disabled]letter-spacing: 1px; */
+	overflow-y: scroll;
+}
+strong { font-weight: bold; }
+
+img { border:none; }
+
+select, option{
+	font-size: 90%;
+	padding: 4px 2px 4px 33px;
+	height: 22px;
+	border: 1px solid #CCC;
+	width: 270px;
+}
+
+#wrapper {
+	width:870px;
+	margin: 30px auto;
+	background-color: #f4f4f4;
+	position: relative;
+	/* [disabled]overflow: hidden; */
+}
+#Logo 
+{
+	width:180px;
+	height:180px;
+	padding:0;
+	float: right;
+	/* [disabled]border-left: 4px solid white; */
+}
+
+
+#Header
+{
+	/* [disabled]float:left; */
+	width:690px;
+	height:160px;
+	color:@hintergrund;
+	/* [disabled]background-color: #EEE; */
+	padding-top: 20px;
+	/* [disabled]padding: 0px 40px; */
+	/* [disabled]background-image: url(../_images/m-a-t-foto-005.jpg); */
+
+}
+#slogan {
+	height: 45px;
+	position: relative;
+	width: 610px;
+	margin-left: 60px;
+	margin-top: 25px;
+}
+#slogan img {
+	height: 23px;
+	width: 90px;
+	opacity: .3;
+	/* Nervige IE-Anpassungen für die Opacity, braucht auch(!) background-color! */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	background-color: @hauptschrift-farbe;
+	cursor: pointer;
+}
+#slogan #sloganKonkret {
+	left: 0px;
+	position: absolute;
+	top: 0px;
+}
+#slogan #sloganWirksam {
+	left: 220px;
+	position: absolute;
+	top: 0px;
+}
+#slogan #sloganVielseitig {
+	position: absolute;
+	right: 30px;
+	top: 0px;
+}
+
+
+
+#Header h1 /* Titel 'Andreas Dirscherl' */
+{
+	padding-top:5px;
+	padding-left:60px;
+	font-size:150%;
+	font-weight:normal;
+	/* [disabled]line-height: 0.8em; */
+}
+
+#Header h2 /* Untertitel 'F.M. Alexander-Technik' */
+{
+	/* [disabled]border-top:3px solid white; */ /* Das ist die Trennlinie zwischen Name und AT */
+	margin-top:5px; /* Abstand der Linie vom Namen */
+	/* [disabled]margin-left:35px; */ /* Abstand der Linie von links */
+	/* [disabled]padding-top:8px; */ /* Abstand AT von der Linie */
+	padding-left:60px; /*Einrückung AT */
+	/* [disabled]width:350px; */ /* Länge der Linie */
+	font-size:1em;
+	font-weight:bold;
+	color: lighten(@hintergrund, 30%);
+}
+
+
+#NavWrapper {
+	float:right;
+	/* [disabled]margin: 25px 0px 0 0px; */  /* Das ist der Abstand der gesamte Navigation von oben und vom linken Seitenrand */
+	width:180px; /* Eigentliche Gesamtbreite 166px (plus 10px linker Margin) */
+	text-align:right;
+	/* [disabled]background-color: #EEE; */
+	clear: both;
+}
+
+
+ul#Navigation
+{
+}
+
+ul#Navigation li
+{
+	font-size:90%;
+	list-style: none;
+}
+
+ul#Navigation li a
+{
+	margin:0;
+	padding: 11px 0;  /* Das ist der Abstand der Navigationselemente zwischen den Linien*/
+	padding-right:7px; /* rechter Abstand, damit bei die rechtsbündigen Elemente nicht an den Rahmen "hingebatzt" sind */
+	border-bottom: 2px solid #DDD; /* Jedes Navigationselement hat eine Begrenzungslinie oben */
+	display:block;
+	line-height: 1.4em;
+	color:@hintergrund;
+	background-color: transparent;
+	/* [disabled]font-size:1em; */
+	text-decoration: none;
+	font-weight:bold;
+}
+
+ul#Navigation li a:hover
+{
+	background:#05ef05 url(../_images/m-a-t-PunktGrau.png) no-repeat 5px center;
+	color:white;
+	/* [disabled]font-style: italic; */
+	/* [disabled]border-left:2px solid white; */
+	/* [disabled]border-right:2px solid white; */
+}
+
+ul#Navigation li a.default /* Diese Regel ist eine Dummy-Regel, nötig nur für das PHP-Script 'navigation.inc.php' */ { }
+
+ul#Navigation li a.current /* Diese Regel gilt für die aktuell ausgewählte Seite, im wesentlichen eine Kopie des Hover-States */
+{
+	background:#DDD url(../_images/m-a-t-Punkt.png) no-repeat 5px center;
+	text-align: right;
+	font-style: italic;
+	/* [disabled]border-left:2px solid white; */
+	/* [disabled]border-right:2px solid white; */
+	/* vvvv------ hier die speziellen Änderungen ------------vvvvvv  */
+	color:#333;
+	cursor:default;
+	padding-right:12px; /* rechter Abstand, damit bei die rechtsbündigen Elemente nicht an den Rahmen "hingebatzt" sind */
+	letter-spacing:0.01em;
+}
+
+ul#Navigation li a.hasSubMenu /* Diese Regel zeigt an, dass der entsprechende Hauptmenupunkt Untereinträge hat */ 
+{
+	border-bottom:none !important; 
+}
+
+ul#Navigation li ul
+{
+	margin:-2px 0 0; /* Den Listenabstand oben wieder aufheben, so dass das erste Unterelement gleich anschließt */
+	/* [disabled]border-left:2px solid white; */
+	/* [disabled]border-right:2px solid white; */
+	padding:0 10px 4px 20px; /* Einrückungen links und unten, hier speziell zu definieren, um die Standard-Definition #ul li von oben zu überschreiben. Der Effekt ist ein eigener 'Kasten' für die Subnavigation mit  Einrückung ringsum, außer rechts, dort bis zum Rahmen*/
+	/* [disabled]background-color: #DDD; */ /* Zusammen mit dem eben definierten 'Kasten' den Rest auffüllen mit der Hover-Hintergrundfarbe */
+	text-align:right;
+	font-size: 0.8em;
+	/* [disabled]border-bottom: 2px solid #DDD; */
+}
+
+ul#Navigation li ul li
+{
+	/* [disabled]margin:2px 0; */
+}
+ul#Navigation li ul li a
+{
+	padding:4px 4px 4px 0; /* Und dies definiert die einzelnen Subnavigations-Zeilen */
+	text-decoration: none;
+	color:@hintergrund;
+	/* [disabled]border-top: 1px solid #DDD; */
+}
+
+ul#Navigation li ul li a:hover
+{
+	display: block;
+	background-color: #FFE0A2;
+	border:none;
+}
+
+ul#Navigation li ul li a.default /* Diese Regel ist eine Dummy-Regel, nötig nur für das PHP-Script 'subnavigation.inc.php' */ { }
+
+ul#Navigation li ul li a.current /* Diese Regel gilt für die aktuell ausgewählte Seite, im wesentlichen eine Kopie des Hover-States */
+{
+	background-color: #FFE0A2;
+	border-right:none;
+	border-left:none;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	padding-right:2px; /* Anpassen des rechten Abstands aus der Haupt-Definition für .current von oben, hier für die Subnavigation */
+}
+
+#Inhalt
+{
+	padding:1px 50px 10px 40px;
+	width:600px; /* Breite = Gesamt 950 - Navigation (linker Rand) 166 = 784 */
+	font-size: 1em;
+	text-align:left;
+	background-color: #777;
+}
+#Inhalt #ContentContainer {
+	min-height: 456px;
+}
+
+#Inhalt a
+{
+	text-decoration: none;
+	font-weight:bold;
+	color:#DDD;
+	padding:0px 0px 0px 0px;
+	padding-left: 15px;
+	background:url(../_images/m-a-t-Punkt.png) no-repeat 3px center;
+	border-bottom:1px dotted #999;
+}
+
+
+
+
+#Inhalt a:hover
+{
+	color:@hintergrund;
+	background:#05ef05 url(../_images/m-a-t-PunktGrau.png) no-repeat 3px center;
+	border-bottom:1px solid #a7a7a7;
+}
+
+#Inhalt a.noBackground {
+	font-weight:bold;
+	padding:0;
+	background: none !important;
+	border: none;
+}
+#Inhalt a.noBackground:hover {
+	border: none;
+}
+#Inhalt .nachlese {
+	/* [disabled]background: #05ef05 url(../_images/m-a-t-PunktGrau.png) no-repeat 3px center; */
+	/* [disabled]border-top:2px dotted @hintergrund; */
+	/* [disabled]border-bottom:2px dotted @hintergrund; */
+	/* [disabled]color: lighten(@hintergrund, 30%); */
+	/* [disabled]text-align: right; */
+	/* [disabled]padding: 5px 5px 5px 20px; */
+	/* [disabled]display: block; */
+	/* [disabled]width:525px; */
+	/* [disabled]margin-right: 20px; */
+}
+#Inhalt a.nachlese:hover {
+	/* [disabled]background:#777 url(../_images/m-a-t-Punkt.png) no-repeat 3px center; */
+	/* [disabled]border-top:2px dotted #05ef05; */
+	/* [disabled]border-bottom:1px dotted #05ef05; */
+	/* [disabled]color: #05ef05; */
+}
+
+#Inhalt #raster {
+	position: relative;
+}
+
+
+#Inhalt h1
+{
+	font-size:1.25em;
+	font-weight:bold;
+	font-variant: normal;
+	/* [disabled]border-bottom: 3px solid #0085B9; */
+	padding-top: 20px;
+	margin-left:15px;
+	margin-bottom: 1em;
+}
+
+#Inhalt h2
+{
+	font-size:1em;
+	font-weight:bold;
+	font-variant: normal;
+	letter-spacing:0.02em;
+	margin: 5px 15px;
+}
+
+#Inhalt h3
+{
+	font-size:0.9em;
+	font-weight:bold;
+	letter-spacing:0.05em;
+	padding: 15px 15px 10px;
+}
+#Inhalt p
+{
+	font-size:0.9em;
+	font-weight:normal;
+	font-variant: normal;
+	margin-top: 1em;
+	margin-bottom: 0.8em;
+	margin-left: @stdRandLinks;
+}
+#Inhalt blockquote  {
+	margin: 10px 10px 10px @stdRandLinks;
+	padding: 0px;
+	font-size: 100%;
+}
+#Inhalt blockquote p {
+	/* [disabled]font-weight: bold; */
+	font-style: italic;
+	margin: 5px;
+	padding: 0px;
+}
+#Inhalt blockquote p.source {
+	font-style: normal;
+	font-size: 80%;
+	font-weight: normal;
+	text-align: right;
+}
+
+
+
+
+#Inhalt ol, #Inhalt ul
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.8em;
+	margin-left:2em;
+}
+
+#Inhalt li
+{
+	font-size:0.9em;
+	font-weight:normal;
+	font-variant: normal;
+	margin: .3em 0;
+}
+#Inhalt img {
+	margin: 5px;
+	padding: 0px;
+	/* [disabled]float: right; */
+	/* [disabled]float: left; */
+}
+
+#Inhalt table
+{
+	font-size:80%;
+	width: 580px;
+	border-collapse: collapse;
+	border: 1px solid #DDDDDD;
+	text-align: right;
+	background-color: @hintergrund1;
+	position: relative;
+}
+#Inhalt table .profilCol1 {
+	width: 80px;
+}
+#Inhalt table .profilCol2 {
+	width: 150px;
+}
+#Inhalt table .profilCol3 {
+	width: 150px;
+}
+#Inhalt iframe {
+}
+
+
+#Inhalt table p {
+	padding: 0px;
+	margin: 0;
+}
+
+
+#Inhalt td
+{
+	vertical-align:top;
+	text-align: left;
+	padding:10px;
+}
+
+
+
+#Inhalt table h2  {
+	font-size: 90%;
+	padding: 0;
+	margin: 0;
+}
+#Kontaktformular table {
+	width: 580px;
+	margin-left: @stdRandLinks + 20;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+
+/*  Referenzen Liste/Tabelle */
+ul#referenzen {
+	width: 500px;	
+	margin-left: @stdRandLinks+5px;
+	padding:10px 10px;
+	background: @hintergrund1;
+	li {
+		list-style:disc inside;
+		margin-left: 0;
+		padding:1px 5px;
+	}
+}
+
+.odd {
+		background: @hintergrund2;
+	}
+.even {
+		background: @hintergrund1;
+	}
+
+#Inhalt iframe {
+	border: 1px solid #DDD;
+	background-color: lighten(@hintergrund, 30%);
+	margin: 10px;
+}
+#Inhalt  .layoutTable {
+	font-weight: normal;
+	margin-left: @stdRandLinks;
+	font-size: 90%;
+	background-color: transparent;
+}
+#Inhalt .layoutTable tr td {
+	padding: 0px;
+}
+
+
+
+
+#Inhalt #Spalte
+{
+	float:right;
+	text-align: right;
+	padding-bottom:5px;
+	margin-left:25px;
+	font-size:0.7em;
+	font-weight: normal;
+}
+#Inhalt .imgFloaterL {
+	float:left;
+	margin-bottom:5px;
+	margin-right:10px;
+	border: 1px solid #DDD;
+	margin-top: 0px;
+}
+#Inhalt .imgFloaterR
+{
+	float:right;
+	text-align: right;
+	/* [disabled]padding-bottom:5px; */
+	margin-bottom:0;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:0.6em;
+	font-weight: normal;
+	border: 1px solid #DDD;
+	/* [disabled]padding-right: 10px; */
+}
+
+#Inhalt #textFloaterR /* Textbox, die rechts neben der Diashow erscheint */
+{
+	margin: 0px 0 20px 310px; /* oberer und unterer Rand so, dass vertikale ausgerichtet, linker Rand: Breite ImageRotatorL plus Abstand 20px */
+
+}
+#Inhalt #textFloaterR p /* Absätze mehr Abstand voneinander */
+{
+	margin-top:1.2em;	
+}
+
+#Inhalt #SpalteL
+{
+	position: relative;
+	width:160px;
+	float:left;
+	text-align: left;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:5px;
+	margin-top: @stdRandLinks;
+	margin-bottom: 0;
+	margin-left: @stdRandLinks;
+	font-size:0.6em;
+	font-weight: normal;
+}
+
+#Inhalt .noPrint { }
+#Inhalt #selectAll {
+	background: url(../_images/selectAll.jpg) no-repeat;
+}
+#Inhalt #selectPia {
+	background: url(../_images/selectPia.jpg) no-repeat;
+}
+#Inhalt #selectAndrea {
+	background: url(../_images/selectAndrea.jpg) no-repeat;
+}
+#Inhalt #selectDagmar {
+	background: url(../_images/selectDagmar.jpg) no-repeat;
+}
+#Inhalt #selectJana {
+	background: url(../_images/selectJana.jpg) no-repeat;
+}
+#Inhalt #selectAndreas {
+	background: url(../_images/selectAndreas.jpg) no-repeat;
+}
+#Inhalt #selectGudrun {
+	background: url(../_images/selectGudrun.jpg) no-repeat;
+}
+#Inhalt #selectJutta {
+	background: url(../_images/selectJutta.jpg) no-repeat;
+}
+#Inhalt #selectMaleen {
+	background: url(../_images/selectMaleen.jpg) no-repeat;
+}
+
+em
+{
+	/* [disabled]font-weight:normal; */
+	font-style:italic;
+	font-size:100%;
+}
+
+
+.hidden {
+	display:none !important
+}
+
+.floatLeft {
+	float: left;
+}
+
+
+.link
+{
+	font-size:1.0em;
+	font-style:italic;
+	font-weight:normal;
+}
+.quote  {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 90% !important;
+	font-style: italic !important;
+	margin: 1em 7em 1em 4em !important;
+}
+
+.noHover {
+	background:none !important;
+	text-decoration: none !important;
+}
+
+
+.Trennlinie {
+	border-top:1px solid #DDD;
+	margin-top: 10px;
+	padding-top: 10px;
+	clear:right;
+}
+
+.clear
+{
+	clear:both;
+}
+.clearLeft {
+	clear:left;
+}
+.clearRight {
+	clear:right;
+}
+
+
+
+.small {
+	font-size: .7em !important;
+	font-weight: normal !important;
+}
+.noMarginTop {
+	margin-top: 0 !important;
+}
+.noMarginBottom {
+	margin-bottom: 0 !important;
+}
+
+.extraMarginTop {
+	margin-top: 2em !important;
+}
+
+a.hiddenAnchor { /* Diese Regel dient bei der Profile-Seite dazu, die Hyperlink-Formatierung bei dem ersten Eintrag(=Pia) zu verbergen */
+	visibility: hidden;
+}
+.button {
+	margin: 0px;
+	width: 200px;
+	padding: 2px;
+	text-align: center;
+	font-size: 80%;
+}
+.hidden {
+	display: none;
+}
+
+.indent {
+	margin-left: 40px;
+	border: 1px dotted #CCC;
+	margin-top: 1em;
+	background-color: lighten(@hintergrund, 30%);
+	padding-bottom: 1em;
+	font-size: 95%;
+}
+.newsBox {
+	margin: 10px 10px 15px @stdRandLinks;
+	float: left;
+	width: 520px;
+	background: #EEE;
+	color: @hintergrund;
+	aborder: 1px solid #05ef05;
+	border-right: 20px solid #05ef05;
+	padding: 10px !important;
+	/* [disabled]height: 130px; */
+	overflow: visible;
+}
+.newsBox h2 {
+	font-size: 100% !important;
+	margin-left:10px !important;
+	margin-top:10px !important;
+	color: @hintergrund;
+	margin-bottom: 0.7em !important;
+	width: 520px;
+	/* [disabled]background: #CCC; */
+	/* [disabled]padding: 10px; */
+	letter-spacing: 8px !important;
+}
+.newsBox li , .newsBox p {
+	font-size: 75% !important;
+	margin: 5px 10px !important;
+}
+.newsBox a {
+	color: #555 !important;
+}
+/* Alte CSS vom Rücken Termplate - sind die Regeln für die alte Unternavigation */
+/*#Inhalt .subNavigationHeader {
+	background: white;
+	width: 510px;
+	color: @hintergrund;
+	border-right: 20px solid #05ef05;
+	font-size: 90%;
+	line-height: 1.2;
+	margin: 20px 20px 0;
+	padding: 0 20px 10px;
+	overflow: hidden;
+}
+
+#Inhalt .subNavigationHeader h1 {
+	padding: 10px 0 0;
+	margin: 0;
+}
+#Inhalt .subNavigationHeader h2 {
+	margin: 0px;
+	padding: 0 0 10px;
+}
+#Inhalt ul.subNavigationLinks {
+	margin: 0px;
+}
+#Inhalt .subNavigationHeader p {
+	margin: 0px;
+	padding: 0px;
+}
+
+#Inhalt ul.subNavigationLinks li{
+	float: left;
+	text-align: center;
+	border: 1px solid white;
+	background-color: #DDD;
+	list-style: none;
+	margin: 0;
+}
+#Inhalt  ul.subNavigationLinks li a.subDefault {
+	padding: 4px 0 0;
+	color: @hintergrund;
+	font-size: 80%;
+	background-image: none !important;
+	border:none;
+	line-height: 1;
+	display:block;
+	height: 24px;
+	width: 166px;
+	font-weight: normal;
+}
+#Inhalt  ul.subNavigationLinks li a.subCurrent {
+	padding: 4px 0 0;
+	color: #555 !important;
+	font-size: 80%;
+	background-color: #05ef05 !important;
+	border:none;
+	line-height: 1;
+	display:block;
+	height: 24px;
+	width: 166px;
+	font-style: italic;
+	cursor:default;
+}
+#Inhalt  ul.subNavigationLinks li a:hover {
+	background-color: #05ef0e;
+	color:white;
+	background-image: none !important;
+
+}
+
+#Inhalt #subContent {
+	margin-top: 0px;
+	margin-left: 10px;
+}
+*/.colSection {
+	font-size: 75%;
+	margin-top: 1em;
+	margin-left: @stdRandLinks;
+}
+.merkmale h3 {
+	margin-bottom: 0px !important;
+	clear:left;
+}
+.merkmale p {
+	margin-top: 0px !important;
+}
+
+
+
+.colSectionRow h2 {
+	margin: 0 !important;
+	padding-top: 0 !important;
+}
+.colSectionRow p {
+	margin: 0 !important;
+	padding-top: 0 !important;
+	text-align: justify;
+	padding-right: 5px;
+}
+
+
+.colSectionRow {
+	display: table-row;
+	clear: left;
+}
+.colSectionColumn {
+	display: table-column;
+	width: 185px;
+	padding-right: 5px;
+	float: left;
+	margin-top: 1em;
+}
+.colSectionColumn img {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+/* flexSlider Styles */
+#flexSlider {
+	position: relative;
+	overflow: hidden;
+	height:160px;
+	margin-left: @stdRandLinks;
+	width: 550px;
+	/* [disabled]border: 1px solid white; */
+}
+#flexSlider img {
+	position:absolute;
+	height:150px;
+	display:none;
+	padding: 0 5px;
+	background: @hintergrund;
+}
+#imageloader {position:relative; display:block; width: 100%; margin: 0px auto; text-align: center;}
+#imageloader img {
+	position:relative;
+	top:70px;
+	z-index:100;
+	width:54px;
+	height:55px;
+	display:inline;
+}
+#footer {
+	background-color: @hintergrund;
+	padding: 20px 0px 10px 50px;
+	text-align: left;
+	clear: right;
+}
+#footer ul li {
+	display: inline;
+	margin-right: 2em;
+	list-style-type: none;
+	font-size: 60%;
+}
+
+#footer a {
+	text-decoration: none;
+	font-weight:bold;
+	color:lighten(@hintergrund, 30%);
+	padding:0px 3px;
+	/* [disabled]background:url(../_images/m-a-t-Punkt.png) no-repeat 3px center; */
+	border-bottom:1px dotted #999;
+}
+#footer a:hover {
+	color:@hintergrund;
+	/* [disabled]background:#05ef05 url(../_images/m-a-t-PunktGrau.png) no-repeat 3px center; */
+	background-color:#05ef05;
+	border-bottom:1px solid #a7a7a7;
+}
+#teamTable td {
+	margin: 0px;
+	padding: 5px;
+}
